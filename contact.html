@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <header class="site-header">
+            <div class="site-title">
+                <a href="index.html">alexmadeit</a>
+            </div>
+            <img src="Gifs/HeaderPng.jpg" class="header-center-image">
+            <nav class="nav-links">
+                <a href="about.html">[About]</a>
+                <a href="process.html">[Process]</a>
+                <a href="skills.html">[Skills]</a>
+                <a href="journey.html">[Journey]</a>
+                <a href="extras.html">[Extras]</a>
+                <a href="contact.html">[Contact]</a>
+            </nav>
+        </header>
+
+        <section id="contact" class="section-bg">
+    <h2>Contact</h2>
+        <p>Entry-level IT learner focused on growth and hands on experience. <br>
+        Let's connect.</p>
+            <form class="contact-form" action="#" method="post">
+        <div class="form-row">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+        </div>
+        <div class="form-row">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-row">
+            <label for="topic">Topic</label>
+            <input type="text" id="topic" name="topic" placeholder="What is this about?">
+        </div>
+        <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" cols="40" placeholder="Write your message here..." required></textarea>
+        </div>
+        <div class="form-row">
+            <label for="reason">Reason for Contact</label>
+            <select id="reason" name="reason">
+                <option value="general">General Question</option>
+                <option value="portfolio">Portfolio Feedback</option>
+                <option value="networking">Networking</option>
+                <option value="opportunity">Opportunity</option>
+            </select>
+        </div>
+        <div class="form-row checkbox-row">
+            <input type="checkbox" id="updates" name="updates">
+            <label for="updates">Send me updates</label>
+        </div>
+
+        <div class="form-row">
+            <button type="submit" class="submit-btn">Send Message</button>
+        </div>
+    </form>
+    <div class="contact-container">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alexdamon45@gmail.com" 
+            target="_blank" 
+            class="email-box">
+            GMAIL
+        </a>
+        <a href="https://github.com/AlexMadeIt" 
+            target="_blank" 
+            class="email-box">
+            GITHUB
+        </a>
+        <a href="https://www.linkedin.com/in/alexdamon/" 
+            target="_blank" 
+            class="email-box">
+            LINKEDIN
+        </a>
+    </div>
+    </section>
+
+        <footer class="site-footer">
+            <div class="footer-left">@ 2026 Alex Damon</div>
+            <div class="footer-center">
+                <img src="Gifs/heart.gif" alt="Footer GIF" class="footer-gif">
+            </div>
+            <div class="footer-right">
+                <a href="https://instagram.com/fuk.alexx" target="_blank" class="footer-link">
+                    @912.alexx
+                </a>
+            </div>
+        </footer>
+
+        <script>
+            document.querySelector(".contact-form").addEventListener("submit", function(e) {
+                e.preventDefault();
+                alert("Message sent!");
+            });
+        </script>
+
+    </body>
+</html>
