@@ -1,402 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Alex Made It</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-        <style>
-            body, html {height: 100%; margin: 0;}
-            .center-container {display: flex;
-            justify-content: center; align-items: center; height: 100vh; flex-direction: column;
-            perspective: 800px;}
-.big-title {font-family: 'Inter', sans-serif;
-  font-size: 10em;
-  letter-spacing: 0em;
-  color: #dddcdcf6;
-   text-shadow:
-    -2px 0 rgb(250, 255, 255),
-    2px 0 white,
-    0 0 20px white;
-  filter: contrast(1.4) brightness(1.1);
-  text-transform: uppercase;
-  background: linear-gradient(
-        180deg,
-        #7c7c7ce3 0%,
-        #cacaca 20%,
-        #9e9e9e 40%,
-        #ffffff 60%,
-        #7a7a7a 80%,
-        #eaeaea 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
- text-shadow:
-    0 2px 1px rgba(253, 253, 253, 0.616),
-    0 -2px 1px rgb(255, 255, 255),
-    0 0 15px rgba(200, 200, 255, 0.6);
-    user-select: none;
-    animation: spin3d 6s linear infinite;
-    transform-style: preserve-3d;
-    position: relative;
-    z-index: 1;}
-.subtitle {
-  margin-top: 20px;
-  font-family: 'Courier New', monospace;
-  font-size: 1.2em;
-  letter-spacing: -0.05em;
-  color: #9a9a9a;
-  text-align: center;
-  max-width: 600px;}
-.site-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 24px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10;
-    background: rgba(0,0,0,0.6);}
-.site-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 24px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10;
-    background: rgba(0,0,0,0.6);
-    border-bottom: 2px solid gray;}
-.site-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(0,0,0,0.6);
-    color: #ffffff;
-    font-family: 'Courier New', monospace;
-    font-size: 0.9em;
-    z-index: 10;
-    border-top: 2px solid gray;}
-.site-title {
-    font-family: 'Courier New', monospace;
-    font-size: 1.1em;
-    font-weight: 700;
-    letter-spacing: 0.15em;
-    color: #f2f2f2;
-    text-transform: uppercase;}
-.nav-links {
-    display: flex;
-    gap: 20px;}
-.nav-links a {
-    font-family: 'Courier New', monospace;
-    font-size: 0.9em;
-    letter-spacing: 0.12em;
-    color: #9a9a9a;
-    text-decoration: none;
-    text-transform: uppercase;}
-.nav-links a:hover {color: #ffffff;}
-        </style>
-    </head>
-    <body>
-        <div id="top"></div>
-        <header class="site-header">
-            <div class="site-title">
-                <a href="#top">alexmadeit</a>
+<head>
+    <meta charset="UTF-8">
+    <title>Alex Made It</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="site-title"><a href="index.html">alexmadeit</a></div>
+     <img src="Gifs/HeaderPng.jpg" class="header-center-image">
+    <nav class="nav-links">
+        <a href="about.html">[About]</a>
+        <a href="process.html">[Process]</a>
+        <a href="skills.html">[Skills]</a>
+        <a href="journey.html">[Journey]</a>
+        <a href="extras.html">[Extras]</a>
+        <a href="contact.html">[Contact]</a>
+    </nav>
+</header>
+
+<div class="center-container">
+    <h1 class="big-title">ALEX</h1>
+
+    <div class="center-gif">
+        <img src="Gifs/ALEXMADEIT.gif">
+    </div>
+
+    <p class="subtitle">
+        Building clean, intentional digital spaces.<br>
+        Less noise. More meaning.
+    </p>
+</div>
+
+<footer class="site-footer">
+            <div class="footer-left">@ 2026 Alex Damon</div>
+            <div class="footer-center">
+                <img src="Gifs/heart.gif" alt="Footer GIF" class="footer-gif">
             </div>
-            <img src="Gifs/HeaderPng.jpg" alt="Header Logo" class="header-center-image">
-            <nav class="nav-links">
-                <a href="#about">[About]</a>
-                <a href="#process">[Process]</a>
-                <a href="#skills">[Skills]</a>
-                <a href="#journey">[Journey]</a>
-                <a href="#extras">[Extras]</a>
-                <a href="#contact">[Contact]</a>
-            </nav>
-        </header>
-        <div class="center-container">
-            <h1 class="big-title">ALEX</h1>
-            <div class="center-gif">
-        <img src="Gifs/ALEXMADEIT.gif" alt="Animated GIF">
-        </div>
-            <p class="subtitle">
-            Building clean, intentional digital spaces.<br>
-            Less noise. More meaning.
-            </p>
-        </div>
-        <section id="about" class="section-bg">
-    <h2>About</h2>
-
-    <div class="about-structured">
-        <div class="about-block">
-            <h3>WHO AM I</h3>
-            <p>Sophomore studying <strong>Information Technology</strong> with a focus in <strong>Cyber Security</strong>.</p>
-        </div>
-
-        <div class="about-block">
-            <h3>WHY TECH</h3>
-            <p>I've always been interested in computers and understanding how systems work. That interest led me toward a career in <strong>Information Technology</strong>.</p>
-        </div>
-
-        <div class="about-block">
-            <h3>WHERE I'M GOING</h3>
-            <p>Currently building foundational skills in <strong>Networking</strong>, <strong>System Administration</strong>, <strong>Security Fundamentals</strong>, <strong>Web Design</strong>, and <strong>Software Development</strong>.</p>
-        </div>
-    </div>
-
-    <div class="learning-section">
-        <h3 class="learning-title">[CURRENTLY LEARNING]</h3>
-
-        <div class="learning-grid">
-            <div class="learning-card">Networking Fundamentals</div>
-            <div class="learning-card">HTML Basics</div>
-            <div class="learning-card">System Administration</div>
-            <div class="learning-card">Cybersecurity Principles</div>
-            <div class="learning-card">Web Design Fundamentals</div>
-            <div class="learning-card">Software Development</div>
-        </div>
-    </div>
-</section>
-    <section id="process" class="section-bg">
-    <h2>Process</h2>
-    <div class="process-section">
-        <div class="process-box">
-            <h3>01 — Planning</h3>
-            <p>
-                I started by planning the structure of the website and deciding what each section would include. I focused on keeping the layout simple and easy to navigate.
-            </p>
-        </div>
-        <div class="process-box">
-            <h3>02 — Structure (HTML)</h3>
-            <p>
-                I built the foundation of the website using HTML. I organized each section clearly so the content would stay structured and readable.
-            </p>
-        </div>
-        <div class="process-box">
-            <h3>03 — Styling (CSS)</h3>
-            <p>
-                I used CSS to style the website and improve the layout. This included spacing, alignment, and overall visual design.
-            </p>
-        </div>
-        <div class="process-box">
-            <h3>04 — Refinement & Improvement</h3>
-            <p>
-                I reviewed the site and made adjustments to spacing and layout. This helped improve consistency and overall readability.
-            </p>
-        </div>
-    </div>
-</section>
-<section id="skills" class="section-bg">
-    <h2>Skills</h2>
-    <div class="skills-section">
-        <div class="skill-box">
-    <h3>Technical Skills</h3>
-            <div class="skill-item">
-                <span>HTML</span>
-                <div class="progress-bar">
-                    <div class="progress html"></div>
-                </div>
+            <div class="footer-right">
+                <a href="https://instagram.com/fuk.alexx" target="_blank" class="footer-link">
+                    @912.alexx
+                </a>
             </div>
-            <div class="skill-item">
-                <span>CSS</span>
-                <div class="progress-bar">
-                    <div class="progress css"></div>
-                </div>
-            </div>
-            <div class="skill-item">
-                <span>Java Script</span>
-                <div class="progress-bar">
-                    <div class="progress cli"></div>
-                </div>
-            </div>
-        </div>
-        <div class="skill-box">
-            <h3>Currently Developing</h3>
-            <ul>
-                <li>Responsive web design principles</li>
-                <li>Web accessibility fundamentals</li>
-                <li>IT systems and networking basics</li>
-                <li>Version control concepts</li>
-            </ul>
-        </div>
-        <div class="skill-box">
-            <h3>Professional Skills</h3>
-            <ul>
-                <li>Problem-solving</li>
-                <li>Attention to detail</li>
-                <li>Time management</li>
-                <li>Adaptability</li>
-                <li>Communication</li>
-            </ul>
-        </div>
-    </div>
-</section>
+        </footer>
 
-<section id="journey" class="section-bg">
-    <h2>Journey</h2>
-    <div class="journey-section">
-        <div class="journey-box">
-            <h3>Beginning</h3>
-            <p>
-                I started this course with little experience in web development. I learned the basics of HTML and how websites are structured. Basic tags and page layout were new at first.
-            </p>
-        </div>
-        <div class="journey-box">
-            <h3>Growth</h3>
-            <p>
-                Over time, I improved my understanding of CSS and how to design full web pages. I learned how to organize content and improve layout. Pages became more structured and consistent through practice.
-            </p>
-        </div>
-        <div class="journey-box">
-            <h3>Future Direction</h3>
-            <p>
-                I plan to continue building my skills in IT, especially in cybersecurity and networking. My goal is to gain more hands on experience for future opportunities.
-            </p>
-        </div>
-    </div>
-</section>
-
-<section id="extras" class="section-bg">
-    <h2>Extras</h2>
-
-    <div class="extras-container">
-        <details class="extras-details">
-            <summary>Click to learn more about my web design journey</summary>
-            <p>
-                I am continuing to improve my skills in HTML, CSS, and web design. This project helped me better understand layout, structure, and styling.
-            </p>
-        </details>
-    
-            <button class="extras-button" onclick="showExtrasMessage()">
-                Click for a message
-            </button>
-
-        <div class="video-wrapper">
-            <video controls>
-                <source src="Videos/website-demo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-
-        <script>
-            var Skills = ["HTML", "CSS", "JavaScript"];
-            var Level = ["Intermediate", "Intermediate", "Beginner"];
-            var Status = ["Improving", "Improving", "Learning"];
-
-            function showExtrasMessage() {
-            alert("Thanks for checking out the Extras section!");
-}
-
-        </script>
-
-        <table class="project-table">
-            <tr>
-                <th>Skill</th>
-                <th>Experience Level</th>
-                <th>Status</th>
-            </tr>
-
-            <tr>
-                <td><script>document.write(Skills[0]);</script></td>
-                <td><script>document.write(Level[0]);</script></td>
-                <td><script>document.write(Status[0]);</script></td>
-            </tr>
-
-            <tr>
-                <td><script>document.write(Skills[1]);</script></td>
-                <td><script>document.write(Level[1]);</script></td>
-                <td><script>document.write(Status[1]);</script></td>
-            </tr>
-
-            <tr>
-                <td><script>document.write(Skills[2]);</script></td>
-                <td><script>document.write(Level[2]);</script></td>
-                <td><script>document.write(Status[2]);</script></td>
-            </tr>
-        </table>
-
-    </div>
-</section>
-
-<section id="contact" class="section-bg">
-    <h2>Contact</h2>
-        <p>Entry-level IT learner focused on growth and hands on experience. <br>
-        Let's connect.</p>
-            <form class="contact-form" action="#" method="post">
-        <div class="form-row">
-            <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
-        </div>
-        <div class="form-row">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        </div>
-        <div class="form-row">
-            <label for="topic">Topic</label>
-            <input type="text" id="topic" name="topic" placeholder="What is this about?">
-        </div>
-        <div class="form-row">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" cols="40" placeholder="Write your message here..." required></textarea>
-        </div>
-        <div class="form-row">
-            <label for="reason">Reason for Contact</label>
-            <select id="reason" name="reason">
-                <option value="general">General Question</option>
-                <option value="portfolio">Portfolio Feedback</option>
-                <option value="networking">Networking</option>
-                <option value="opportunity">Opportunity</option>
-            </select>
-        </div>
-        <div class="form-row checkbox-row">
-            <input type="checkbox" id="updates" name="updates">
-            <label for="updates">Send me updates</label>
-        </div>
-
-        <div class="form-row">
-            <button type="submit" class="submit-btn">Send Message</button>
-        </div>
-    </form>
-    <div class="contact-container">
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alexdamon45@gmail.com" 
-            target="_blank" 
-            class="email-box">
-            GMAIL
-        </a>
-        <a href="https://github.com/AlexMadeIt" 
-            target="_blank" 
-            class="email-box">
-            GITHUB
-        </a>
-        <a href="https://www.linkedin.com/in/alexdamon/" 
-            target="_blank" 
-            class="email-box">
-            LINKEDIN
-        </a>
-    </div>
-    </section>
-    <footer class="site-footer">
-        <div class="footer-left">@ 2026 Alex Damon</div>
-          <div class="footer-center">
-            <img src="Gifs/heart.gif" alt="Footer GIF" class="footer-gif">
-          </div>
-        <div class="footer-right">
-            <a href="https://instagram.com/fuk.alexx" target="_blank" class="footer-link">
-        @912.alexx</a>
-        </div>
-    </footer>
-
-    <script>
-        document.querySelector(".contact-form").addEventListener("submit", function(e) {
-        e.preventDefault();
-        alert("Message sent!");
-        });
-    </script>
 </body>
+</html>
