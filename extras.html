@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Extras</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <header class="site-header">
+            <div class="site-title">
+                <a href="index.html">alexmadeit</a>
+            </div>
+            <img src="Gifs/HeaderPng.jpg" class="header-center-image">
+            <nav class="nav-links">
+                <a href="about.html">[About]</a>
+                <a href="process.html">[Process]</a>
+                <a href="skills.html">[Skills]</a>
+                <a href="journey.html">[Journey]</a>
+                <a href="extras.html">[Extras]</a>
+                <a href="contact.html">[Contact]</a>
+            </nav>
+        </header>
+
+        <section id="extras" class="section-bg">
+    <h2>Extras</h2>
+
+    <div class="extras-container">
+        <details class="extras-details">
+            <summary>Click to learn more about my web design journey</summary>
+            <p>
+                I am continuing to improve my skills in HTML, CSS, and web design. This project helped me better understand layout, structure, and styling.
+            </p>
+        </details>
+    
+            <button class="extras-button" onclick="showExtrasMessage()">
+                Click for a message
+            </button>
+
+        <div class="video-wrapper">
+            <video controls>
+                <source src="Videos/website-demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <script>
+            var Skills = ["HTML", "CSS", "JavaScript"];
+            var Level = ["Intermediate", "Intermediate", "Beginner"];
+            var Status = ["Improving", "Improving", "Learning"];
+
+            function showExtrasMessage() {
+            alert("Thanks for checking out the Extras section!");
+}
+
+        </script>
+
+        <table class="project-table">
+            <tr>
+                <th>Skill</th>
+                <th>Experience Level</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td><script>document.write(Skills[0]);</script></td>
+                <td><script>document.write(Level[0]);</script></td>
+                <td><script>document.write(Status[0]);</script></td>
+            </tr>
+
+            <tr>
+                <td><script>document.write(Skills[1]);</script></td>
+                <td><script>document.write(Level[1]);</script></td>
+                <td><script>document.write(Status[1]);</script></td>
+            </tr>
+
+            <tr>
+                <td><script>document.write(Skills[2]);</script></td>
+                <td><script>document.write(Level[2]);</script></td>
+                <td><script>document.write(Status[2]);</script></td>
+            </tr>
+        </table>
+
+    </div>
+</section>
+
+        <footer class="site-footer">
+            <div class="footer-left">@ 2026 Alex Damon</div>
+            <div class="footer-center">
+                <img src="Gifs/heart.gif" alt="Footer GIF" class="footer-gif">
+            </div>
+            <div class="footer-right">
+                <a href="https://instagram.com/fuk.alexx" target="_blank" class="footer-link">
+                    @912.alexx
+                </a>
+            </div>
+        </footer>
+
+    </body>
+</html>
