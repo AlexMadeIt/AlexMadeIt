@@ -1,6 +1,97 @@
 body {background-color: #000000;}
 * {box-sizing:border-box}
 body {overflow-x: hidden;}
+body, html {
+    height: 100%;
+    margin: 0;}
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    perspective: 800px;}
+.big-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 10em;
+    letter-spacing: 0em;
+    color: #dddcdcf6;
+    filter: contrast(1.4) brightness(1.1);
+    text-transform: uppercase;
+    background: linear-gradient(
+        180deg,
+        #7c7c7ce3 0%,
+        #cacaca 20%,
+        #9e9e9e 40%,
+        #ffffff 60%,
+        #7a7a7a 80%,
+        #eaeaea 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow:
+        0 2px 1px rgba(253, 253, 253, 0.616),
+        0 -2px 1px rgb(255, 255, 255),
+        0 0 15px rgba(200, 200, 255, 0.6);
+    user-select: none;
+    animation: spin3d 6s linear infinite;
+    transform-style: preserve-3d;
+    position: relative;
+    z-index: 1;}
+.subtitle {
+    margin-top: 20px;
+    font-family: 'Courier New', monospace;
+    font-size: 1.2em;
+    letter-spacing: -0.05em;
+    color: #9a9a9a;
+    text-align: center;
+    max-width: 600px;}
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 24px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background: rgba(0,0,0,0.6);
+    border-bottom: 2px solid gray;}
+.site-title {
+    font-family: 'Courier New', monospace;
+    font-size: 1.1em;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: #f2f2f2;
+    text-transform: uppercase;}
+.nav-links {
+    display: flex;
+    gap: 20px;}
+.nav-links a {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    letter-spacing: 0.12em;
+    color: #9a9a9a;
+    text-decoration: none;
+    text-transform: uppercase;}
+.nav-links a:hover {
+    color: #ffffff;}
+.site-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.6);
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    color: #ffffff;
+    z-index: 10;
+    border-top: 2px solid gray;}
 @keyframes spin3d {
   from {transform: rotateY(0deg);}
   to {transform: rotateY(360deg);}}
@@ -314,12 +405,26 @@ button, .email-box {cursor: url('Gifs/Ditto.png') 16 16, pointer;}
     border-color: white;
     color: white;
     transform: translateY(-2px);}
+.process-intro {
+    font-family: 'Courier New', monospace;
+    color: #aaa;
+    margin-bottom: 30px;
+    max-width: 700px;}
 .process-section {
     display: flex;
     justify-content: space-between;
     gap: 30px;
     width: 90%;
     margin: 50px auto;}
+.process-section::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: rgba(255,255,255,0.08);
+    transform: translateX(-50%);}
 .process-box {
     position: relative;
     padding: 30px;
@@ -327,10 +432,26 @@ button, .email-box {cursor: url('Gifs/Ditto.png') 16 16, pointer;}
     background: rgba(255,255,255,0.03);
     backdrop-filter: blur(6px);
     transition: all 0.4s ease;
-    overflow: hidden;}
+    overflow: hidden;
+    color: #cfcfcf;
+    line-height: 1.6em;}
+.process-box::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.6;}
+.process-section:hover .process-box {
+    opacity: 0.4;
+    transition: 0.3s ease;}
 .process-box:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.5);}
+    opacity: 1 !important;
+    transform: scale(1.02);}
 .process-box h3 {
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -651,12 +772,77 @@ video {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     cursor: pointer;
-    transition: 0.3s ease;
-}
-
+    transition: 0.3s ease;}
 .extras-button:hover {
     background: rgba(255, 255, 255, 0.2);
     border-color: white;
     color: #ffffff;
-    transform: scale(1.03);
-}
+    transform: scale(1.03);}
+.cert-section {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 60px;
+    text-align: center;}
+.cert-section h3 {
+    font-family: 'Courier New', monospace;
+    letter-spacing: 3px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;}
+.cert-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 12px;
+    padding: 25px;
+    backdrop-filter: blur(8px);
+    transition: 0.3s ease;}
+.cert-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    border-color: rgba(255,255,255,0.25);}
+.cert-top {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Courier New', monospace;
+    color: #aaa;
+    margin-bottom: 12px;}
+.cert-status {
+    color: white;
+    letter-spacing: 2px;}
+.cert-bar {
+    width: 100%;
+    height: 8px;
+    background: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px 0;}
+.cert-fill {
+    width: 20%;
+    height: 100%;
+    background: white;
+    animation: fillAnim 2s ease forwards;}
+@keyframes fillAnim {
+    from { width: 0%; }
+    to { width: 20%; }}
+.cert-percent {
+    font-family: 'Courier New', monospace;
+    color: #bbb;
+    margin-bottom: 15px;}
+.cert-checklist {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;}
+.cert-item {
+    font-family: 'Courier New', monospace;
+    color: #aaa;
+    margin: 8px 0;
+    transition: 0.3s;}
+.cert-item.done {
+    color: #fff;}
+.cert-title {
+    font-family: 'Courier New', monospace;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: large;}
